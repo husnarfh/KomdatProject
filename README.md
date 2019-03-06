@@ -44,7 +44,7 @@ sudo apt-get install python3
 ## Instalasi Calibre-Web
 1. Instal dependensi dengan menjalankan `pip install --target vendor -r requirements.txt.`
 2. Jalankan perintah: `python cps.py` (atau `nohup python cps.py` - Direkomendasikan jika ingin menutup terminal windows)
-3. Arahkan browser ke <http://localhost:8083> or <http://localhost:8083/opds> untuk OPDS catalog
+3. Arahkan browser ke <http://localhost:8083> atau <http://localhost:8083/opds> untuk OPDS catalog
 4. Atur `Location of Calibre database` ke folder penempatan Calibre library (metadata.db), tekan tombol “submit”
 5. Masuk ke halaman Login
 ```bash
@@ -115,10 +115,17 @@ Output Format: EPUB, FB2, OEB, MENYALA, LRF, MOBI, PDB, PML, RB, PDF, SNB, TCR, 
   - Dapat disimpan dalam jangka waktu yang lama dengan kemungkinan kerusakan yang minim
   - Distribusinya yang cepat dan mudah karena memanfaatkan jaringan internet
   - Cenderung lebih murah dibanding buku cetak
+  
 - Kekurangan
   - Bergantung dengan sumber daya listrik
   - Perangkat pembaca yang masih mahal
   - Terkait dengan masalah hak cipta
+  
+  *Aplikasi sejenis* : Google Play Books
+  Banyak perbedaan antara Google Play Books dengan Calibre Web, yaitu :
+  1. Masalah hak cipta
+  2. Banyak fitur saat kegiatan membaca, misalnya mengubah warna background, menandai halaman, dan menyimpan kutipan.
+  
  # Referensi
 - <https://github.com/auriza>
 - <https://github.com/janeczku/calibre-web>
