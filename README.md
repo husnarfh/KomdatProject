@@ -5,17 +5,35 @@ Calibre-Web merupakan sebuah aplikasi berbasis web yang menyediakan interface un
 
 
 # Instalasi
-  - Prasyarat, apa saja yang harus diinstal sebelumnya.
-    Python 2.7+, python 3.x+
-  - Langkah instalasi dalam CLI.
-
-
+  Requirements : 
+  Untuk menginstall Calibre-Web membutuhkan beberapa hal, yaitu :
+  1. Python 2.7+, python 3.x+
+  2. requirements.txt yang berisi :
+  - Babel>=1.3
+  - Flask-Babel>=0.11.1
+  - Flask-Login>=0.3.2
+  - Flask-Principal>=0.3.2
+  - singledispatch>=3.4.0.0
+  - backports_abc>=0.4
+  - Flask>=0.11
+  - iso-639>=0.4.5
+  - PyPDF2==1.26.0
+  - pytz>=2016.10
+  - requests>=2.11.1
+  - SQLAlchemy>=1.1.0
+  - tornado>=4.1
+  - Wand>=0.4.4
+  - unidecode>=0.04.19
+  3. metadata.db (database) yang berasal dari aplikasi Calibre Library yang dapat didownload dan diinstall [disini](https://calibre-ebook.com/download)
+  4. Amazon's KindleGen untuk fitur konversi buku
+    
 # Konfigurasi
   - Dapat mengupload 
   - Dapat registrasi secara publik
   
 # Otomatisasi
-## Instalasi Web Server Virtual8
+
+## Instalasi Web Server Virtual
 1. Membuat VM Ubuntu Server
 Membuat VM baru pada VirtualBox dengan tipe "Ubuntu 64-bit", menggunakan virtual disk Ubuntu Server 18.04.
 2. Setting Port-Forwarding VM
@@ -70,7 +88,9 @@ Password: admin123
 3. Konversi e-book
   
   Calibre dapat mengonversi dalam berbagai format. Fitur dalam konversi e-book yaitu dapat mengatur ulang ukuran semua font, memastikan output e-book dapat dibaca, dan dapat mendeteksi atau membuat struktur buku.
+  
 Input Format: CBZ, CBR, CBC, CHM, EPUB, FB2, HTML, MENYALA, LRF, MOBI, ODT, PDF, RRC, PDB, PML, RB, RTF, SNB, TCR, TXT
+
 Output Format: EPUB, FB2, OEB, MENYALA, LRF, MOBI, PDB, PML, RB, PDF, SNB, TCR, TXT
 
 4. Memiliki server untuk mengakses koleksi e-book secara online
